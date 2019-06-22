@@ -1,172 +1,32 @@
 ---
 layout: default
 ---
+<main>
+    <section id="Intro">
+        
+        {%- include intro.html -%}
+        
+    </section>
+    <section id="About">
 
-<!DOCTYPE html>
-<html>
-    <body>
-        <main>
-            <section id="Intro">
-                <h1>Hi there, I’m Inês.<br>Welcome to my <strike>online portfolio</strike><br><span>Pride & Joy</span></h1>
-                <nav class="Main-sections">
-                    <p><a class="Link-with-arrow" href="#About"><span>⟶</span> Get to know me</a></p>
-                    <p><a class="Link-with-arrow" href="#Portfolio"><span>⟶</span> Check out my projects</a></p>
-                </nav>            
-            </section>
-            <section id="About">
-                <p class="Lead">Born and raised in Lisbon, Portugal, I’ve been gracing the world with my existence since 1997.<br>I’m a UX Designer on the very beginning of my career, currently working as a trainee at the Portuguese digital agency Wingman.<br>My main areas of interest are Web Design and Development, User Experience and User Interface (UX & UI), Editorial Design and Illustration.<br>Being a design and illustration enthusiast, my education and academic choices were very ‘design-oriented’:</p>
-                <div>
-                <section id="Achievements">
-                    <h2><span>⟶</span>Achievements</h2>
-                    <ol>
-                        <li><h3>From 2015 to 2018</h3>
-                            <p>Bachelor’s degree in Communication Design</p>
-                            <p>Faculty of Fine Arts, University of Lisbon</p>
-                            <p><span>Main areas:</span> Editorial design & print, Branding, Illustration, Web design.</p>
-                        </li>
-                        <li><h3>From 2018 to 2019</h3>
-                            <p>Postgraduate degree in Digital Experience Design (DXD)</p>
-                            <p>Faculty of Fine Arts, University of Lisbon</p>
-                            <p><span>Main areas:</span> UX & UI, Interface design, Web development, Responsive design.</p>
-                        </li>
-                        <li><h3>Since October, 2018</h3>
-                            <p>UX Consultant @ Wingman</p>
-                            <p><span>Main areas:</span> Research, wireframing, testing, </p>
-                        </li>
-                    </ol>
-                </section>
-                <section id="Skills">
-                    <h2><span>⟶</span>Skills</h2>
-                    <ul>
-                        <li>
-                            <span>Sketch</span>
-                            <img src="assets/images/4_and_a_half_out_of_5.svg" alt="4 out of 5 stars">
-                        </li>
-                        <li>
-                            <span>Indesign</span>
-                            <img src="assets/images/4_out_of_5.svg" alt="4 and a half out of 5 stars, great">
-                        </li>
-                        <li>
-                            <span>Photoshop</span>
-                            <img src="assets/images/4_out_of_5.svg" alt="4 out of 5 stars, very good">
-                        </li>
-                        <li>
-                            <span>Illustrator</span>
-                            <img src="assets/images/4_out_of_5.svg" alt="4 out of 5 stars, very good">
-                        </li>
-                        <li>
-                            <span>Invision</span>
-                            <img src="assets/images/4_and_a_half_out_of_5.svg" alt="4 and a half out of 5 stars, great">
-                        </li>
-                        <li>
-                            <span>HTML & CSS</span>
-                            <img src="assets/images/3_out_of_5.svg" alt="3 out of 5 stars, good">
-                        </li>
-                    </ul>
-                </section>
-                </div>
-            </section>
-            <section id="Portfolio"> 
-                <!-- <ul>
-                        {% for post in site.posts %}
-                            <li>
-                                <figure>
-                                    <img src="{{ post.image}}" alt="#">
-                                    <h4>{{ post.title }}</h4>
-                                    <legend>{{ post.content }}</legend>
-                                </figure>
-                            </li>
-                        {% endfor %}
-                    </ul> -->
-                <ol>
-                    <li class="Project-container">
-                        <article class="Project">
-                            <h3>Carta para Josefa, minha avó</h3>
-                            <section class="Image">
-                                <img src="assets/images/1.jpg" alt="First image of the projec">
-                                <img src="assets/images/2.jpg" alt="Second image of the project">
-                            </section>
-                            <ul class="Details">
-                                <li class="detail">January, 2018</li>
-                                <li class="detail">Editorial</li>
-                            </ul>
-                            <section class="Description">
-                                <p class="Text"><i>Carta para Josefa, minha avó</i> is a 1978 chronicle by the Portuguese Nobel prize winner José Saramago. This group project consisted on making a kind of fanzine from that letter that he wrote to his grandmother, based on the concept of self-publishing and more alternative/underground publications. It consists of an blue-and-orange illustrated booklet and postcards with anonymous messages from several people to their loved ones. Most of the photographs used for this project are family photos of the two designers.</p>
-                                <!-- <a href="#">Show me more</a> -->
-                            </section>
-                        </article>    
-                    </li>
-                <li class="Project-container">
-                    <article class="Project">
-                        <h3>Elephants can remember</h3>
-                        <section class="Image">
-                            <img src="assets/images/3.jpg" alt="First image of the projec">
-                            <img src="assets/images/4.jpg" alt="Second image of the projec">
-                        </section>
-                        <ul class="Details">
-                            <li class="detail">January, 2018</li>
-                            <li class="detail">Editorial</li>
-                        </ul>
-                        <section class="Description">
-                            <p class="Text"><i>Elephants can remember</i> is a book written by Agatha Christie, in 1972, part of the series about Poirot's cases. This project is the redesign of that book, based on concepts such as hybrid novel and visual writing. By adding different kinds of illustrative elements, the original sense of the story is not only ‘visually translated’, but also expanded - through the relationship between the narrative and the images next to it. The illustrations were made using vintage advertisings, engravings and old photographs.</p>
-                            <!-- <a href="#">Show me more</a> -->
-                        </section>
-                    </article>    
+        {%- include about.html -%}
+    
+    </section>
+
+    <section id="Portfolio"> 
+        <ul>
+            {% for post in site.posts %}
+                <li>
+                    <figure>
+                        <img src="{{ post.image }}" alt="#">
+                        <h4>{{ post.title }}</h4>
+                        <legend>{{ post.content }}</legend>
+                    </figure>
                 </li>
-                <li class="Big-Project-container">
-                    <article class="Big-Project">
-                        <h3>Haven</h3>
-                        <section class="Image">
-                            <img src="assets/images/5.png" alt="Big image of the project">
-                        </section>
-                        <ul class="Details">
-                            <li class="detail">December, 2018</li>
-                            <li class="detail">Interface design</li>
-                        </ul>
-                        <section class="Description">
-                            <p class="Text"><i>Haven</i> was designed to be a webapp to read, write and share poetry. The objective was to design a clean and ‘noise-free’ interface so the focus would be directed at what the user is reading. It would allow its users to explore all kinds of poetry genres and discover new poems, as well as write their own and choose to archive or share it. This was an interface design project, resulting on an invision prototype where you can experience what Haven would be and look like.<br><a href="https://invis.io/5VPJT7IASU7">Check it out here!</a></p>
-                            <!-- <a href="#">Show me more</a> -->
-                        </section>
-                    </article>    
-                </li>
-                <li class="Project-container">
-                    <article class="Project">
-                        <h3>FenixEdu</h3>
-                        <section class="Image">
-                            <img src="images/Fenix_1.png" alt="First image of the project">
-                            <img src="images/Fenix_2.png" alt="Second image of the project">
-                        </section>
-                        <ul class="Details">
-                            <li class="detail">January, 2018</li>
-                            <li class="detail">UX & UI Design</li>
-                        </ul>
-                        <section class="Description">
-                            <p class="Text">Redesign of FenixEdu, a platform for academic management of higher education institutions. It is used in Portuguese Universities but, many times, students struggle when using it. I talked to the students about the platform and did some user testing to understand the main pain-points. The final product is a better organised and personalised interface, with additional features such as an academic calendar, and the optimised mobile version. Check out the <a href="https://projects.invisionapp.com/share/AFF7U82VC#/screens">Desktop</a> and the <a href="invis.io/YXB12967999DHC">Mobile</a> prototypes!</p>
-                            <!-- <a href="#">Show me more</a> -->
-                        </section>
-                    </article>    
-                </li>
-                <li class="Project-container">
-                    <article class="Project">
-                    <h3>Leeds Zoological & Botanical Gardens</h3>
-                    <section class="Image">
-                        <img src="images/Leeds/leeds_1.jpg" alt="First image of the project">
-                        <img src="images/Leeds/leeds.gif" alt="Second image of the project">
-                    </section>
-                        <ul class="Details">
-                        <li class="detail">January, 2018</li>
-                        <li class="detail">UX & UI Design</li>
-                    </ul>
-                    <section class="Description">
-                        <p class="Text">Interactive publication aimed at children about <i>Leeds Zoological and Botanical Gardens</i>. The briefing for this project was to create an object about a site of public interest that should be promoted. I created a narrative that tells the history of these Gardens, merging facts and fiction, resulting on a 6-part narrative told by ‘former residents’ of the Gardens. All the illustrations were hand drawn and coloured, scanned and edited, and I also designed the all-caps font used on the title. Check out the <a href="https://invis.io/8QHPOB994R2">Desktop</a> prototype!</p>
-                        <!-- <a href="#">Show me more</a> -->
-                    </section>
-                    </article>    
-                </li>
-            </ol>
-        </section>    
-        </main>       
-    </body>
-</html> 
+            {% endfor %}
+        </ul>
+    </section>    
+</main>       
+
 
 

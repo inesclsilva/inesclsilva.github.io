@@ -17,15 +17,3 @@ exclude:
 date_format: "%b %-d, %Y"
 
 # generate social links in footer
-social_links:
-  twitter: danielfdsilva
-  github:  danielfdsilva
-  # facebook:
-
-### template colors, used site-wide via css ###
-colors:
-  black:     '#111111'
-  white:     '#f8f8f8'
-  blue:      '#50E3C2'
-  green:     '#7ED321'
-  pink:      '#F93082'
