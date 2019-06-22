@@ -1,0 +1,31 @@
+title: Hi, I am Inês Silva
+author: Inês Silva
+email: inesclsilva1997@gmail.com
+description: > # this means to ignore newlines until "exclude"
+  Write an awesome description for your new site here. This could
+  for example be used for SEO purposes.
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitignore
+
+# Date format for posts
+# refer to http://shopify.github.io/liquid/filters/date/ if you
+# want to customize this
+date_format: "%b %-d, %Y"
+
+# generate social links in footer
+social_links:
+  twitter: danielfdsilva
+  github:  danielfdsilva
+  # facebook:
+
+### template colors, used site-wide via css ###
+colors:
+  black:     '#111111'
+  white:     '#f8f8f8'
+  blue:      '#50E3C2'
+  green:     '#7ED321'
+  pink:      '#F93082'

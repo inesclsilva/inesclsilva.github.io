@@ -1,0 +1,644 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 300;
+    background-color: #F7F4F2;
+}
+
+header {
+    width: 100vw;
+    margin: 0;
+    position: fixed;
+    padding: 20px 0;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #F7F4F2;
+    z-index: 1;
+    text-align: center;
+}
+
+header nav ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ol li {
+    display: inline;
+    margin: 30px;
+    text-decoration: none;
+}
+
+header a {
+    text-decoration: none;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #B28E7A;
+}
+
+h1 {
+    margin: 0;
+    font-size: 54px;
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 200;
+}
+
+h2 {
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 200;
+    font-size: 30px;
+    font-size: 30px;
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+h2 span {
+    margin-right: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h3 {
+    width: auto;
+    font-size: 24px;
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 200;
+    text-align: left; 
+    margin: auto;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.Lead {
+    width: 640px;
+    margin-top: 60px;
+    font-size: 22px;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+#Intro {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 160px 100px 60px;
+}
+
+#Intro h1 strike {
+    font-size: 40px;
+}
+
+#Intro h1 span {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.Main-sections {
+    width: auto;
+    margin-top: 60px;
+}
+
+.Link-with-arrow {
+    display: block;
+    float: left;
+    clear: left;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 14px 20px;
+    font-size: 22px;
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+.Link-with-arrow:hover {
+    margin: -1px -1px 30px;
+    border-style: solid;
+    border-width: 1px;
+} 
+
+.Link-with-arrow span {
+    font-size: 30px;
+    font-style: normal;
+    margin-right: 20px;
+}
+
+#About {
+    display: inline-block;
+    clear: both;
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 60px 100px 60px;
+    background-color: #F0F8FF;
+    border-top-style: solid;
+    border-width: 1px;
+}
+
+#About section {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: auto;
+    margin: 100px 0;
+}
+
+#Achievements ol {
+    width: 100%;
+    list-style: none;
+    margin: 80px 0 0;
+    padding: 0;
+}
+
+#Achievements ol li {
+    vertical-align: top;
+    text-align: left;
+    padding: 0 20px 0 0;
+}
+
+#Achievements ol li:nth-child(1n+1) {
+    margin-top: 60px;
+} 
+
+#Achievements ol li p {
+    width: 85%;
+    font-size: 16px;
+    margin: 8px 0 0;
+}
+
+#Achievements ol li p:first-of-type {
+    font-size: 18px;
+    margin: 20px 0 10px;
+    padding: 0 20px 20px 0;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+#Skills ul {
+    width: auto;
+    list-style: none;
+    padding: 0;
+    margin-top: 72px;
+}
+
+#Skills ul li {
+    display: block;
+    clear: both;
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#Skills ul li span {
+    font-size: 22px;
+    margin: 10px;
+    float: left;
+}
+
+#Skills img {
+    width: auto;
+    display: inline-block;
+    clear: left;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+#Portfolio {
+    clear: left;
+    margin: 0;
+    padding: 0;
+    border-top-style: solid;
+    border-width: 1px;
+}
+
+#Portfolio ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#Portfolio h3 {
+    text-align: center;
+}
+
+.Project-container {
+    float: left;
+    width: 50vw;
+    margin: 0;
+    padding: 0;
+}
+
+.Project { 
+    height: 800px;
+    padding: 100px 0 60px;
+    position: relative;
+}
+
+.Image {
+    margin: auto;
+    opacity: 1;
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    margin-top: 50px;
+    transition: .1s ease;
+}
+
+.Image img {
+    display: block;
+    margin: auto;
+    max-height: 50%;
+    padding: 2.5% 0;
+    background-size: contain;
+}
+
+.Big-Project-container {
+    clear: left;
+    width: 100vw; 
+    margin: 0;
+    padding: 0;
+}
+
+.Big-Project { 
+    margin: auto;
+    width: 100%;
+    height: 800px;
+    padding: 100px 0 60px;
+    position: relative;
+}
+
+.Big-Project .Image{
+    width: 1000px;
+    height: auto;
+}
+
+.Big-Project img {
+    width: 96%;
+    margin: auto;
+}
+
+.Description {
+    width: 90%;
+    height: auto;
+    margin: 0;
+    transform: translate(5%, -380px);
+    overflow: hidden;
+    opacity: 0;
+}
+
+.Text {
+    width: 400px;
+    margin: auto;
+
+}
+
+.Details {
+    display: block;
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    left: 10%;
+    bottom: 60px; 
+    font-size: 14px;
+    font-style: italic;
+    list-style: none;
+}
+
+.detail {
+    display: inline-block;
+    line-height: 45px;
+}
+
+.detail:first-child {
+    float: left;
+    left: 0;
+}
+
+.detail:last-child {
+    float: right;
+    right: 0;
+}
+
+.Project:hover .Image{
+    opacity: 0;
+    transition: .1s; 
+}
+
+.Project:hover .Description{
+    opacity: 1;
+    transition: .1s; 
+}
+
+.Big-Project:hover .Image{
+    opacity: 0;
+    transition: .1s; 
+}
+
+.Big-Project:hover .Description{
+    opacity: 1;
+    transition: .1s; 
+}
+
+#Contacts {
+    width: 100vw;
+    clear: both;
+    height: auto;
+    padding: 60px 100px 100px;
+    background-color: #FBE7E0;
+    border-top-style: solid;
+    border-width: 1px;
+}
+
+#Contacts p {
+    margin-bottom: 40px;
+}
+
+#Contacts img {
+    display: block;
+    margin: auto;
+    margin-top: 160px;
+    animation-name: spin;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+
+@media screen and (max-width:1024px) {
+    
+    h1 {
+        margin: 5% 0 0;
+        font-size: 48px;
+    }
+    
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+    
+    .Link-with-arrow {
+        font-size: 20px;
+    }
+    
+    .Link-with-arrow span {
+        font-size: 26px;
+    }
+    
+    #About section {
+        display: block;
+        clear: both;
+        width: 100%;
+        height: auto;
+        margin: 50px 0;
+    }
+    
+    .Lead {
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .Project:hover .Image{
+        opacity: 1;
+        transition: 0; 
+    }
+
+    .Project:hover .Description{
+        opacity: 1;
+        transition: .1s; 
+    }
+
+    .Big-Project:hover .Image{
+        opacity: 1;
+        transition: 0; 
+    }
+
+    .Big-Project:hover .Description{
+        opacity: 1;
+        transition: 0; 
+    }
+    
+    .Big-Project-container {
+        margin: 60px 0 0;
+        border-bottom-style: solid;
+        border-width: 1px;
+    }
+    
+    .Big-Project {
+        height: auto;
+    }
+    
+    .Big-Project .Image{
+        width: 100%;
+    }
+    
+    .Big-Project .Description {
+        width: auto;
+        height: 300px;
+        transform: none;
+        overflow: visible;
+        opacity: 1;
+        margin: 60px 0 60px;
+    }
+    
+    .Text {
+        width: 480px;
+        margin: auto;
+    }
+    
+    .Project-container {
+        clear: both;
+        width: 100vw;
+        margin: 60px 0 0;
+        border-bottom-style: solid;
+        border-width: 1px;
+    }
+    
+    .Project-container:last-child {
+        border-bottom-style: none;
+    }
+    
+    .Project {
+        height: auto;
+        padding: 20px; 
+    }
+    
+    .Description {
+        width: auto;
+        height: 300px;
+        transform: none;
+        overflow: visible;
+        opacity: 1;
+        margin: 60px 0 60px;
+    }
+
+    .Project .Image {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .Project .Image img {
+        max-width: 80%;
+        max-height: 50%;
+        padding: 2.5% 0;
+        background-size: contain;
+    }
+    
+}
+
+@media screen and (max-width:680px) {
+
+    header {
+        position: fixed;
+        padding: 20px 0;
+        font-size: 15px;
+    }
+
+    header a {
+        margin: 15px;
+    }
+    
+    h1 {
+        margin: 5% 0 0;
+        font-size: 36px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+    
+    #Intro {
+        margin: 0;
+        padding: 160px 50px 40px;
+    }
+    
+    #Intro h1 strike {
+        font-size: 30px;
+    }
+    
+    .Link-with-arrow {
+        font-size: 16px;
+    }
+    
+    .Link-with-arrow span {
+        font-size: 22px;
+    }
+    
+    #About {
+        padding: 60px 50px 40px;
+        background-color: #F0F8FF;
+        border-top-style: solid;
+        border-width: 1px;
+    }
+    
+    .Lead {
+        width: 90%;
+        font-size: 18px;
+    }
+    
+    #Skills ul li span {
+        font-size: 20px;
+    }
+    
+    .Project-container {
+        border-bottom-style: solid;
+        border-width: 1px;
+    }
+    
+    .Project .Image {
+        width: 90%;
+    }
+
+    .Project .Image img {
+        max-width: 90%;
+    }
+    
+    .Text {
+        width: 360px;
+        margin: auto;
+    }
+    
+    #Contacts {
+        padding: 60px 50px 40px;
+    }
+    
+}
+
+@media screen and (max-width:450px) {
+
+    
+    #Intro {
+        margin: 0;
+        padding: 160px 30px 40px;
+    }
+    
+    .Link-with-arrow {
+        font-size: 16px;
+    }
+    
+    .Link-with-arrow span {
+        font-size: 20px;
+    }
+    
+    .Lead {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    #Skills ul li span {
+        clear: left;
+    }
+
+    #Skills img {
+        display: block;
+    }
+    
+    .Text {
+        width: 90%;
+        margin: auto;
+    }
+
+
+}
+
+
+
+
