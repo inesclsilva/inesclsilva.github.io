@@ -14,19 +14,19 @@ layout: default
     </section>
 
     <section id="Portfolio"> 
-        <ul>
+        <ul class="Portfolio">
             {% for post in site.posts %}
-                <li>
+                <li class="Project-container">
+                    {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
                     <figure>
-                        <img src="{{ post.image }}" alt="#">
-                        <h4>{{ post.title }}</h4>
-                        <legend>{{ post.content }}</legend>
+                        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                        <img src="{{ post.image }}" style="width:350px;height:auto;">
+                        <img src="{{ post.image2 }}" style="width:350px;height:auto;">
                     </figure>
                 </li>
             {% endfor %}
         </ul>
     </section>    
 </main>       
-
 
 
