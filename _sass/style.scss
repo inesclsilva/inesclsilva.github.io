@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box;
+    font-family: 'Gothic A1', sans-serif;
 }
 
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Gothic A1', sans-serif;
     font-weight: 300;
     background-color: #F7F4F2;
 }
@@ -54,12 +54,10 @@ a:hover {
 h1 {
     margin: 0;
     font-size: 54px;
-    font-family: 'Noto Serif TC', serif;
     font-weight: 200;
 }
 
 h2 {
-    font-family: 'Noto Serif TC', serif;
     font-weight: 200;
     font-size: 30px;
     font-size: 30px;
@@ -79,7 +77,6 @@ h2 span {
 h3 {
     width: auto;
     font-size: 24px;
-    font-family: 'Noto Serif TC', serif;
     font-weight: 200;
     text-align: left; 
     margin: auto;
@@ -94,7 +91,6 @@ p {
     width: 640px;
     margin-top: 60px;
     font-size: 22px;
-    font-family: 'Gothic A1', sans-serif;
     font-weight: 300;
     line-height: 1.6;
 }
@@ -226,14 +222,30 @@ p {
 }
 
 #Portfolio {
+    clear: left;
     margin: 0;
     padding: 0;
     border-top-style: solid;
     border-width: 1px;
 }
 
+#Portfolio ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 #Portfolio h3 {
     text-align: center;
+    text-decoration: none;
+}
+
+.Project-container a {
+    text-decoration: none;
+}
+
+.Project-container a:hover {
+    color: black;
 }
 
 .Project-container {
@@ -244,87 +256,37 @@ p {
 }
 
 .Project { 
+    margin: 0;
+    padding: 0;
     height: 800px;
     padding: 100px 0 60px;
     position: relative;
 }
 
 .Image {
+    margin: auto;
+    opacity: 1;
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.Image img {
     display: block;
     margin: auto;
+    width: 350px;
     max-height: 50%;
     padding: 2.5% 0;
     background-size: contain;
 }
 
-figure {
-    display: inline-block;
-    float: left;
-    margin: 0;
-}
-
-.Description {
-    width: 90%;
-    height: auto;
-    margin: 0;
-    transform: translate(5%, -380px);
-    overflow: hidden;
-    opacity: 0;
-}
-
-.Text {
-    width: 400px;
-    margin: auto;
-
-}
-
-.Details {
-    display: block;
-    width: 80%;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    text-align: center;
-    left: 10%;
-    bottom: 60px; 
-    font-size: 14px;
-    font-style: italic;
-    list-style: none;
-}
-
-.detail {
-    display: inline-block;
-    line-height: 45px;
-}
-
-.detail:first-child {
-    float: left;
-    left: 0;
-}
-
-.detail:last-child {
-    float: right;
-    right: 0;
-}
-
-.Project:hover .Image{
-    opacity: 0;
-    transition: .1s; 
-}
-
-.Project:hover .Description{
-    opacity: 1;
-    transition: .1s; 
-}
-
-.Big-Project:hover .Image{
-    opacity: 0;
-    transition: .1s; 
-}
-
-.Big-Project:hover .Description{
-    opacity: 1;
-    transition: .1s; 
+.Project:hover{
+    background-color: #E3D8D2;
+    transition: .1s;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 1px;
 }
 
 #Contacts {
