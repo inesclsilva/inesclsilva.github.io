@@ -38,6 +38,10 @@ header a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
 a {
     color: black;
     text-decoration: underline;
@@ -222,17 +226,10 @@ p {
 }
 
 #Portfolio {
-    clear: left;
     margin: 0;
     padding: 0;
     border-top-style: solid;
     border-width: 1px;
-}
-
-#Portfolio ol {
-    margin: 0;
-    padding: 0;
-    list-style: none;
 }
 
 #Portfolio h3 {
@@ -253,16 +250,6 @@ p {
 }
 
 .Image {
-    margin: auto;
-    opacity: 1;
-    width: 70%;
-    height: 70%;
-    text-align: center;
-    margin-top: 50px;
-    transition: .1s ease;
-}
-
-.Image img {
     display: block;
     margin: auto;
     max-height: 50%;
@@ -270,29 +257,10 @@ p {
     background-size: contain;
 }
 
-.Big-Project-container {
-    clear: left;
-    width: 100vw; 
+figure {
+    display: inline-block;
+    float: left;
     margin: 0;
-    padding: 0;
-}
-
-.Big-Project { 
-    margin: auto;
-    width: 100%;
-    height: 800px;
-    padding: 100px 0 60px;
-    position: relative;
-}
-
-.Big-Project .Image{
-    width: 1000px;
-    height: auto;
-}
-
-.Big-Project img {
-    width: 96%;
-    margin: auto;
 }
 
 .Description {
