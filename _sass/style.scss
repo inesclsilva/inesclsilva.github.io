@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box;
-    font-family: 'Gothic A1', sans-serif;
 }
 
 body {
     padding: 0;
     margin: 0;
+    font-family: 'Gothic A1', sans-serif;
     font-weight: 300;
     background-color: #F7F4F2;
 }
@@ -54,10 +54,12 @@ a:hover {
 h1 {
     margin: 0;
     font-size: 54px;
+    font-family: 'Noto Serif TC', serif;
     font-weight: 200;
 }
 
 h2 {
+    font-family: 'Noto Serif TC', serif;
     font-weight: 200;
     font-size: 30px;
     font-size: 30px;
@@ -77,6 +79,7 @@ h2 span {
 h3 {
     width: auto;
     font-size: 24px;
+    font-family: 'Noto Serif TC', serif;
     font-weight: 200;
     text-align: left; 
     margin: auto;
@@ -91,6 +94,7 @@ p {
     width: 640px;
     margin-top: 60px;
     font-size: 22px;
+    font-family: 'Gothic A1', sans-serif;
     font-weight: 300;
     line-height: 1.6;
 }
