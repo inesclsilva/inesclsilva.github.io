@@ -1,5 +1,7 @@
 $hover: #B4907D;
 $background: #F7F4F2;
+$about: #F0F8FF;
+$footer: #FBE7E0;
 $Gothic: 'Gothic A1', sans-serif;
 $Noto: 'Noto Serif TC', serif;
 
@@ -18,12 +20,21 @@ body {
     text-decoration: underline;
     &:hover {
       color: $hover;
-      transition: all 1s ease-out;
       }
  }
 }
 
-header {
+.post-article {
+    margin: 100px;
+    width: 550px;
+    @media screen and (max-width: 680px) {
+        width: 85%;
+        margin: 100px auto;
+        
+    }
+}
+
+.header {
   width: 100vw;
   margin: 0;
   position: fixed;
@@ -42,7 +53,7 @@ header {
     li {
       display: inline;
       margin: 30px;
-        text-decoration: none; }
+      text-decoration: none; }
  }
 }
 
@@ -92,7 +103,6 @@ p {
   width: 640px;
   margin-top: 60px;
   font-size: 22px;
-  font-family: 'Gothic A1', sans-serif;
   font-weight: 300;
   line-height: 1.6;
 }
@@ -132,12 +142,13 @@ p {
   &:hover {
     margin: -1px -1px 30px;
     border-style: solid;
-    border-width: 1px;
+    border-width: 1px;  
   }
   span {
     font-size: 30px;
     font-style: normal;
-    margin-right: 20px;
+    margin-right: 60px;
+    transition: margin 1s ease-in-out;
   }
 }
 
@@ -148,7 +159,7 @@ p {
   height: auto;
   margin: 0;
   padding: 60px 100px 60px;
-  background-color: #F0F8FF;
+  background-color: $about;
   border-top-style: solid;
   border-width: 1px;
   section {
@@ -234,7 +245,7 @@ p {
 
 .Project-container {
   a {
-    text-decoration: none;
+    text-decoration: none;  
     &:hover {
       color: black;
     }
@@ -251,6 +262,10 @@ p {
   height: auto;
   padding: 60px 0 60px;
   position: relative;
+    &:hover {
+    background-color: #E3D8D2;
+    transition: 0.3s ease-in-out; 
+    }
 }
 
 .Image {
@@ -267,17 +282,12 @@ p {
   }
 }
 
-.Project:hover {
-  background-color: #E3D8D2;
-  transition: .1s;
-}
-
 #Contacts {
   width: 100vw;
   clear: both;
   height: auto;
   padding: 60px 100px 100px;
-  background-color: #FBE7E0;
+  background-color: $footer;
   border-top-style: solid;
   border-width: 1px;
   p {
@@ -294,24 +304,13 @@ p {
   }
 }
 
-@-moz-keyframes spin {
-  from {
-    -moz-transform: rotate(0deg);
-  }
-
-  to {
-    -moz-transform: rotate(360deg);
-  }
-}
-
-
 @-webkit-keyframes spin {
   from {
-    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   to {
-    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -379,22 +378,18 @@ p {
       max-width: 80%;
       max-height: 50%;
       padding: 2.5% 0;
-      background-size: contain;
     }
   }
 }
 
 @media screen and (max-width: 680px) {
-  header {
+  .header {
     position: fixed;
     font-size: 15px;
   }
   h1 {
     margin: 5% 0 0;
     font-size: 36px;
-  }
-  p {
-    font-size: 14px;
   }
   #Intro {
     margin: 0;
@@ -411,7 +406,7 @@ p {
   }
   #About {
     padding: 60px 50px 40px;
-    background-color: #F0F8FF;
+    background-color: $background;
     border-top-style: solid;
     border-width: 1px;
   }
@@ -438,7 +433,7 @@ p {
 }
 
 @media screen and (max-width: 450px) {
-  header nav ol li {
+  .header nav ol li {
     margin: 15px;
   }
     
