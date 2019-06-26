@@ -1,18 +1,15 @@
 ---
 layout: default
 ---
-<article class="post h-entry">
-
-  <header class="post-header">
-    <p class="post-meta">
+<article>
+  <header class="post-date">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">
         {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
       </time>
-    </p>
   </header>
 
-  <div class="post-content e-content">
-    {{ content }}
-  </div>
+<section class="post-article">
+      {{ content }}
+</section>
 </article>
