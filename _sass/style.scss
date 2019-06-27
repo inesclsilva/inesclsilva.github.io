@@ -47,23 +47,24 @@ body {
       background-color: #8ca0ff;
     }
 
-    div {
+    .img-1 {
       grid-area: img1;
       background-color: #ffa08c;
     }
 
-    div:nth-of-type(2n) {
+    .img-2 {
       grid-area: img2;
       background-color: #ffff64;
     }
 
-    div:nth-of-type(3n) {
+    .img-3 {
       grid-area: img3;
       background-color: #8cffa0;
     }
 
-    div:nth-of-type(4n) {
+    .img-4 {
       grid-area: img4;
+      background-color: #ffff64;
     } 
     
     @media (min-width: 992px) {
