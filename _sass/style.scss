@@ -23,58 +23,38 @@ body {
       }
  }
 }
-
-article {
+.post-article {
       width: 85%;
-      padding-top: 60px; 
+      padding-top: 160px; 
       margin: auto;
-        #post-layout {
-          display: grid;  
-          grid-template-areas: "img1 img2 img3"
-                               "img4 img5 img6";
-          grid-template-rows: auto;  
-          grid-template-columns: 33% 33% 33%;
-          padding-bottom: 150px;    
-
-            img {
-              width: 95%;
-              height: auto;
-              margin: 2.5%;
-            }
-
-            .img-1 {
-              grid-area: img1;
-              bottom: 0;    
-            }
-
-            .img-2 {
-              grid-area: img2;
-            }
-
-            .img-3 {
-              grid-area: img3;
-            }
-
-            .img-4 {    
-              grid-area: img4;
-            } 
-
-            .img-5 {
-              grid-area: img5;    
-            }
-
-            .img-6 {
-              grid-area: img6;    
-            }
-        }
-    .post-article {
-        padding-top: 80px;
-        width: 60%;
-        margin: auto;
+    p:nth-child(odd) {
+    width: 60%;
+    margin: auto;
     }
+    p:nth-child(even) {
+    display: flex;
+    width: 100%;
+    margin: 60px 0 120px;    
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+        .post-image {
+            display: flex;
+            width: 380px;
+            margin: 10px; 
+        }  
     }
-
-
+    @media (max-width: 1024px){
+        p:nth-child(odd) {
+           width: 80%; 
+        } 
+    } 
+    @media (max-width: 680px){
+        p:nth-child(odd) {
+           width: 100%; 
+        } 
+    } 
+}
 
 .header {
   width: 100vw;
@@ -327,7 +307,7 @@ p {
 #Contacts {
   width: 100vw;
   clear: both;
-  height: auto;
+  height: auto;   
   padding: 60px 100px 100px;
   background-color: $footer;
   border-top-style: solid;
