@@ -23,9 +23,15 @@ body {
       }
  }
 }
+
+#post {
+    padding-top: 160px; 
+    h3 {
+        text-align: center;
+    }    
 .post-article {
-      width: 85%;
-      padding-top: 160px; 
+      width: 90%;
+      padding-top: 60px; 
       margin: auto;
     p:nth-child(odd) {
     width: 60%;
@@ -54,6 +60,7 @@ body {
            width: 100%; 
         } 
     } 
+}
 }
 
 .header {
