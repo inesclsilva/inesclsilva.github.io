@@ -1,9 +1,4 @@
-$hover: #B4907D;
-$background: #F7F4F2;
-$about: #F0F8FF;
-$footer: #FBE7E0;
-$Gothic: 'Gothic A1', sans-serif;
-$Noto: 'Noto Serif TC', serif;
+@import 'variables';
 
 * {
   box-sizing: border-box;
@@ -57,17 +52,16 @@ body {
         }  
         .post-image-big {
             width: 80%;
-            margin-bottom: 40px;
+            margin: 40px 0;
         } 
-    @media (max-width: 680px){ 
-        .post-image {
-            display: flex;
-            width: 300px;
-            margin: 10px; 
+    @media (max-width: 1024px){
+           .post-image {
+            width: 80%; 
+        } 
         }
+    @media (max-width: 680px){ 
         .post-image-big {
             width: 100%;
-            margin-bottom: 40px;
         } 
     } } } }
 
