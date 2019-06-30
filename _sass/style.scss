@@ -36,6 +36,12 @@ body {
     p:nth-child(odd) {
     width: 60%;
     margin: auto;
+        @media (max-width: 1024px){
+           width: 80%; 
+        }
+        @media (max-width: 680px){
+           width: 100%; 
+        }
     }
     p:nth-child(even) {
     display: flex;
@@ -49,19 +55,21 @@ body {
             width: 380px;
             margin: 10px; 
         }  
-    }
-    @media (max-width: 1024px){
-        p:nth-child(odd) {
-           width: 80%; 
+        .post-image-big {
+            width: 80%;
+            margin-bottom: 40px;
         } 
-    } 
-    @media (max-width: 680px){
-        p:nth-child(odd) {
-           width: 100%; 
+    @media (max-width: 680px){ 
+        .post-image {
+            display: flex;
+            width: 300px;
+            margin: 10px; 
+        }
+        .post-image-big {
+            width: 100%;
+            margin-bottom: 40px;
         } 
-    } 
-}
-}
+    } } } }
 
 .header {
   width: 100vw;
@@ -461,6 +469,7 @@ p {
   }
 }
 
+    
 @media screen and (max-width: 450px) {
   .header nav ol li {
     margin: 15px;
@@ -488,4 +497,4 @@ p {
       display: block;
     }
   }
-}
+}    

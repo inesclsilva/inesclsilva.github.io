@@ -11,6 +11,6 @@ Carta para Josefa, minha avó is a 1978 chronicle by the Portuguese Nobel prize 
 ![1](/assets/images/1.jpg){:class="post-image"}
 ![2](/assets/images/2.jpg){:class="post-image"}
 ![3](/assets/images/6.jpg){:class="post-image"}
-![4](/assets/images/7.jpg){:class="post-image"}
-![laranja](/assets/images/7.jpg){:class="post-image"}
+![4](/){:class="post-image"}
+![laranja](/){:class="post-image"}
 
