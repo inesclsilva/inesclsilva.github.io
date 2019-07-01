@@ -47,14 +47,17 @@ body {
         .post-image {
             display: flex;
             width: 380px;
-            margin: 10px;
+            margin: 20px;
             @media (max-width: 1024px){
                 width: 80%; 
+            }
+            @media (max-width: 680px){ 
+                width: 100%;
             } 
         }  
         .post-image-big {
             width: 80%;
-            margin: 40px 0;
+            margin: 20px 0;
             @media (max-width: 680px){ 
                 width: 100%;
             } 
