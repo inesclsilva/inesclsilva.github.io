@@ -7,7 +7,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: $Gothic;
+  font-family: $main;
   font-weight: 300;
   background-color: $background; 
   a {
@@ -16,6 +16,9 @@ body {
       color: $hover;
       }
  }
+    p {
+        margin: 0;
+    }    
 }
 
 #post {
@@ -94,12 +97,12 @@ ul {
 h1 {
   margin: 0;
   font-size: 54px;
-  font-family: $Noto;
+  font-family: $titles;
   font-weight: 200;
 }
 
 h2 {
-  font-family: $Noto;
+  font-family: $titles;
   font-weight: 200;
   font-size: 30px;
   text-align: left;
@@ -117,7 +120,7 @@ h2 {
 h3 {
   width: auto;
   font-size: 24px;
-  font-family: $Noto;
+  font-family: $titles;
   font-weight: 200;
   text-align: left;
   margin: auto;
@@ -213,7 +216,6 @@ p {
       margin-top: 60px;
     }
     p {
-      width: 85%;
       font-size: 16px;
       margin: 8px 0 0;
       &:first-of-type {
@@ -299,15 +301,12 @@ p {
 
 .Image {
   margin: auto;
-  opacity: 1;
-  text-align: center;
   margin-top: 50px;
   img {
     display: block;
     margin: auto;
     padding-bottom: 20px;
     width: 350px;
-    background-size: contain;
   }
 }
 
@@ -346,7 +345,6 @@ p {
 
 @media screen and (max-width: 1024px) {
   h1 {
-    margin: 5% 0 0;
     font-size: 48px;
   }
   h2 {
@@ -383,20 +381,8 @@ p {
       border-bottom-style: none;
     }
   }
-  .Project {
-    height: auto;
-    padding: 20px;
-  }
   .Project .Image {
-    width: 80%;
-    height: auto;
-    margin: auto;
     margin-top: 30px;
-    img {
-      max-width: 80%;
-      max-height: 50%;
-      padding: 2.5% 0;
-    }
   }
 }
 
@@ -423,10 +409,7 @@ p {
     }
   }
   #About {
-    padding: 60px 50px 40px;
-    background-color: $background;
-    border-top-style: solid;
-    border-width: 1px;
+    padding: 0 40px 40px;
   }
   .Lead {
     width: 90%;
@@ -454,8 +437,7 @@ p {
 @media screen and (max-width: 450px) {
   .header nav ol li {
     margin: 15px;
-  }
-    
+  } 
   #Intro {
     margin: 0;
     padding: 160px 30px 40px;
